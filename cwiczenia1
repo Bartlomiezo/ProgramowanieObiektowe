@@ -1,0 +1,116 @@
+import java.util.Scanner;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+
+    static void zad5() {
+        Scanner scanner = new Scanner(System.in);
+        int dzien = scanner.nextInt();
+        switch (dzien) {
+            case 1:
+                System.out.println("Poniedzialek");
+                break;
+            case 2:
+                System.out.println("Wtorek");
+                break;
+            case 3:
+                System.out.println("Sroda");
+                break;
+            case 4:
+                System.out.println("Czwartek");
+                break;
+            case 5:
+                System.out.println("Piatek");
+                break;
+            case 6:
+                System.out.println("Sobota");
+                break;
+            case 7:
+                System.out.println("Niedziela");
+                break;
+            default:
+                System.out.println("Niepoprawny numer tygodnia");
+        }
+    }
+
+    static void zad6() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj rok");
+        int rok = scanner.nextInt();
+        if (rok % 4 == 0 && rok % 100 != 0 || rok % 400 == 0) {
+            System.out.println("Przestepny");
+        } else {
+            System.out.println("Nie jest przestepny");
+        }
+
+
+    }
+
+    static void zad7() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj liczbe");
+        int liczba = scanner.nextInt();
+        System.out.println(liczba);
+        int a = 0;
+        while (liczba > 0) {
+
+            a = a + liczba % 10;
+
+            liczba = liczba / 10;
+
+        }
+        System.out.println(a);
+
+    }
+    static void zad8(){
+        Scanner scanner = new Scanner(System.in);
+        int[] tab = new int[10];
+        for(int i = 0; i<10; i++){
+            int b = scanner.nextInt();
+            tab[i]=b;
+        }
+        for(int i = 9; i>-1; i--){
+            System.out.println(tab[i]);
+        }
+    }
+    static void zad9() {
+        Scanner scanner = new Scanner(System.in);
+        String slowo = scanner.nextLine();
+        for (int i = 0; i < slowo.length(); i++) {
+            if (i % 2 == 0) {
+                System.out.println(slowo.charAt(i));
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+//        System.out.println("Podaj pierwsza liczbe:");
+        Scanner scanner = new Scanner(System.in);
+//        double liczba1 = scanner.nextDouble();
+//        System.out.println("Podaj druga liczbe:");
+//        double liczba2 = scanner.nextDouble();
+//        System.out.println("wynik dodawania to "+(liczba1+liczba2));
+//        System.out.println("wynik odejmowania to "+(liczba1-liczba2));
+//        System.out.println("wynik mnozenia to "+(liczba1*liczba2));
+//        System.out.println("wynik dzielenia to " +(liczba1/liczba2));
+//        Math.pow(3,2);
+//        System.out.println("Podaj pierwszy ciag: ");
+//        String ciag1 = scanner.nextLine();
+//        System.out.println("Podaj drugi ciag: ");
+//        String ciag2 = scanner.nextLine();
+//        System.out.println(ciag1);
+//        System.out.println(ciag2);
+//        System.out.println("Podaj pierwsza liczbe:");
+//        double liczba1 = scanner.nextDouble();
+//        System.out.println("Podaj druga liczbe:");
+//        double liczba2 = scanner.nextDouble();
+//        System.out.println("Podaj trzecia liczbe:");
+//        double liczba3 = scanner.nextDouble();
+//        System.out.println("Podaj czwarta liczbe:");
+//        double liczba4 = scanner.nextDouble();
+//        System.out.println("Wynik dodawania to " + (liczba1 + liczba2 + liczba3 + liczba4));
+        zad9();
+    }
+}
+
